@@ -1,0 +1,9 @@
+#lang racket
+(define (d a b)
+  (try
+   (printf "~a~n" (/ a b))
+   (catch (lambda (ex)
+            (printf "Error: ~a" ex)))
+   (finally 
+    (if (> b -2) 
+      (d a (sub1 b))))))

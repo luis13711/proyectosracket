@@ -1,0 +1,13 @@
+#lang racket
+(let 
+;variables de la operacion 
+((numero1 num1) 
+(numero2 num2)) 
+;instruccion que suma los numeros, es decir, la funcion 
+(+ numero1 numero2)) 
+
+De la misma manera, el procedimiento anterior pudo ser escrito de esta manera: 
+;segunda implementacion de suma de dos numeros, esta vez, sin el let 
+(define (suma num1 num2) 
+(+ num1 num2)) 
+

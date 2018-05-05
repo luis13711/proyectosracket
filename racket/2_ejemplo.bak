@@ -1,0 +1,7 @@
+#lang racket
+;definiciones globales
+(define maximo 3);define que maximo es 3
+(define ( prefijo str );define que prefijo es una funcion de un
+  ;argumento
+  ( substring str 0 maximo )
+  )

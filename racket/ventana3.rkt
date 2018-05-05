@@ -1,0 +1,22 @@
+#lang racket/gui
+(define frame (
+    new frame%[label "Exmple"]
+   )
+  )
+(define my-canvas%
+  (class canvas%
+    ;The base class is canvas%
+    ;define overriding method to handle mouse events
+    (define/override (on-event event)
+      (send msg set-label "Canvas mouse")
+      )
+    ;define overriding method to handle keyboard events
+    (define/override (on-char event)
+      (send msg set-label "Canvas keyboard")
+      )
+    ;call the superclass init, passing on all init args
+    (super-new)
+    )
+ )
+;(new my-canvas%[parent frame])
+(new my-canvas%[parent frame])

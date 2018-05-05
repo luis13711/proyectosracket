@@ -1,0 +1,20 @@
+#lang racket
+(define n 0)
+(define (fibonacci n)
+  (if (> n 1)
+      (+ (fibonacci (- n 1)) (fibonacci (- n 2)))
+      1
+   )
+)
+
+(define cuadrado (lambda (x) (* x x)))
+(cuadrado 8)
+
+
+(define (fibo n)
+  (if (or (= n 0) (= n 1))
+      1
+      (+ (fibo (- n 1)) (fibo (- n 2)))
+      
+   )
+)

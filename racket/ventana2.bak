@@ -1,0 +1,12 @@
+#lang racket/gui
+;Make a frame
+(define frame (
+    new frame%[label "Exmple"]
+   )
+  )
+;Meke a static text message in the frame
+(define msg(new message%[parect frame][label "No events so far..."]))
+
+
+;:Show the frame by calling its show method
+(send frame show #t)
